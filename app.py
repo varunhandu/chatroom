@@ -99,3 +99,6 @@ def disconnect():
             del rooms[room]
     
     send({'name': name, 'message': 'has left the room'}, to=room)
+
+if __name__ == "__main__":
+    socketio.run(app, debug=True)
